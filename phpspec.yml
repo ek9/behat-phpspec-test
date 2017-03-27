@@ -1,0 +1,9 @@
+# phpspec.yml
+formatter.name: pretty
+
+extensions:
+  RMiller\BehatSpec\Extension\BehatSpecExtension\PhpSpecExtension: ~
+  RMiller\BehatSpec\Extension\PhpSpecRunExtension\PhpSpecRunExtension:
+    path: bin/phpspec
+    commands: [describe, exemplify]
+    config: phpspec.yml
