@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b92e9e74f1e1375ca3957d0b6a47ba5f",
+    "content-hash": "3bc718409fc1cf7b228f8cf960897a40",
     "packages": [
         {
             "name": "behat/behat",
@@ -699,21 +699,21 @@
         },
         {
             "name": "rmiller/behat-spec",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/richardmiller/BehatSpec.git",
-                "reference": "b451fc9b324ddec209a18776f9b930714fd1c079"
+                "reference": "127a00c218db1882ba03c669b847e32af12e9050"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/richardmiller/BehatSpec/zipball/b451fc9b324ddec209a18776f9b930714fd1c079",
-                "reference": "b451fc9b324ddec209a18776f9b930714fd1c079",
+                "url": "https://api.github.com/repos/richardmiller/BehatSpec/zipball/127a00c218db1882ba03c669b847e32af12e9050",
+                "reference": "127a00c218db1882ba03c669b847e32af12e9050",
                 "shasum": ""
             },
             "require": {
                 "behat/behat": "^3.0,>=3.0.4",
-                "php": ">=5.6",
+                "php": ">=5.4",
                 "phpspec/phpspec": "^3.0",
                 "rmiller/caser": "^0.1"
             },
@@ -727,7 +727,11 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "RMiller\\BehatSpec\\": "src"
+                    "RMiller\\BehatSpecExtension\\": "src/Extension/BehatSpecExtension",
+                    "RMiller\\ErrorExtension\\": "src/Extension/ErrorExtension/src",
+                    "RMiller\\ExemplifyExtension\\": "src/Extension/ExemplifyExtension/src",
+                    "RMiller\\PhpSpecExtension\\": "src/Extension/PhpSpecExtension/src",
+                    "RMiller\\PhpSpecRunExtension\\": "src/Extension/PhpSpecRunExtension/src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -748,7 +752,7 @@
                 "SpecBDD",
                 "StoryBDD"
             ],
-            "time": "2017-02-27 12:53:41"
+            "time": "2017-01-27T08:42:34+00:00"
         },
         {
             "name": "rmiller/caser",
@@ -1757,9 +1761,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "rmiller/behat-spec": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

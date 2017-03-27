@@ -2,7 +2,7 @@
     "require": {
         "phpspec/phpspec": "~3.2",
         "behat/behat": "~3.3",
-        "rmiller/behat-spec": "dev-master"
+        "rmiller/behat-spec": "^0.5"
     },
     "minimum-stability": "stable",
     "autoload" : {
