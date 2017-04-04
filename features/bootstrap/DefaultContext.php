@@ -19,6 +19,7 @@ class DefaultContext implements Context
      */
     public function __construct()
     {
+        $this->catalogue = new Catalogue();
     }
 
     /**
@@ -26,8 +27,8 @@ class DefaultContext implements Context
      */
     public function thereIsAWhichCostsPs($arg1, $arg2)
     {
-        $product = Product::namedAndPriced($arg1, $price);
-        $this->catalogue->add($product);
+        $product = Product::namedAndPriced($arg1, $arg2);
+        $this->catalogue->add($arg1);
     }
 
     /**
