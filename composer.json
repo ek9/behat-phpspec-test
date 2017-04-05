@@ -1,6 +1,6 @@
 {
     "require": {
-        "leanphp/behat-code-coverage": "~2.5"
+        "leanphp/behat-code-coverage": "dev-3.0.x-dev"
     },
     "minimum-stability": "stable",
     "autoload" : {

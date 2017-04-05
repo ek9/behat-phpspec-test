@@ -1,14 +1,10 @@
 # behat.yml
 default:
-  paths:
-    features: features
-    bootstrap: features/bootstrap
-  #autoload:
-  #'': %paths.base%/features/bootstrap
+  autoload:
+    '': %paths.base%/features/bootstrap
   # configure formatters
-  formatter:
-    name: pretty
-    #pretty: true
+  formatters:
+    pretty: true
   extensions:
     # rmiller/behat-spec extension
     #RMiller\BehatSpec\Extension\BehatSpecExtension\BehatExtension:
@@ -30,26 +26,26 @@ default:
             directories:
               'src':
                 prefix: 'src'
+                suffix: '*.php'
               'tests':
                 prefix: 'src'
+                suffix: '*.php'
         blacklist:
           include:
             directories:
               'vendor':
                 prefix: 'vendor'
+                suffix: '*'
       # report configuration
       report:
         # report format (html, clover, php, text)
         format:    html
         # report options
         options:
-          target:: build/behat-coverage/html
-  context:
-    class: DefaultContext
-
+          target: build/behat-coverage/html
   # suites
-  #suites:
+  suites:
     # default suite
-    #default:
-    #contexts: [DefaultContext]
+    default:
+      contexts: [DefaultContext]
 
