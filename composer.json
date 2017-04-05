@@ -1,8 +1,6 @@
 {
     "require": {
-        "phpspec/phpspec": "~3.2",
-        "behat/behat": "~3.3",
-        "rmiller/behat-spec": "dev-master"
+        "leanphp/behat-code-coverage": "~2.5"
     },
     "minimum-stability": "stable",
     "autoload" : {

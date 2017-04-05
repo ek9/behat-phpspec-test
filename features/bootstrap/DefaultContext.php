@@ -1,14 +1,14 @@
 <?php
 
-use Behat\Behat\Tester\Exception\PendingException;
-use Behat\Behat\Context\Context;
+use Behat\Behat\Exception\PendingException;
+use Behat\Behat\Context\BehatContext as Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 
 /**
  * Defines application features from the specific context.
  */
-class DefaultContext implements Context
+class DefaultContext extends Context
 {
     /**
      * Initializes context.
@@ -54,4 +54,37 @@ class DefaultContext implements Context
     {
         throw new PendingException();
     }
+
+    /**
+     * @Given /^there is a "Sith Lord Lightsaber", which costs £(\d+)$/
+     */
+    public function thereIsASithLordLightsaberWhichCostsPs($arg1)
+    {
+        $this->catalogue = new Catalogue();
+    }
+
+    /**
+     * @When /^I add the "([^"]*)" to the basket$/
+     */
+    public function iAddTheToTheBasket2($arg1)
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Then /^I should have (\d+) product in the basket$/
+     */
+    public function iShouldHaveProductInTheBasket2($arg1)
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Given /^the overall basket price should be £(\d+)$/
+     */
+    public function theOverallBasketPriceShouldBePs2($arg1)
+    {
+        throw new PendingException();
+    }
+
 }
