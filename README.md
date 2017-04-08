@@ -6,7 +6,9 @@ Simple test repository to test BehatSpec functionality.
 - `behatspec` branch is using `dev-master` version of BehatSpec.
 - `behat-phpspec` branch is using `leanphp/behat-phpspec` (temporary fork of
   BehatSpec).
-- `v0.5` branch is using `^0.5` version of BehatSpec.
+- `v0.5` branch is using `^0.5` version of BehatSpec (not working)
+- `behat2-code-generator` is using `leanphp/behat-code-generator:~2.5`
+- `behat3-code-generator` is using `leanphp/behat-code-generator:3.0.x-dev`
 
 It contains a basic configuration of Behat3 and PhpSpec3 with BehatSpec enabled
 and has an example `features/product.feature` defined to test if behat and
