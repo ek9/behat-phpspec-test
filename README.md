@@ -3,7 +3,9 @@ behatspec-test
 
 Simple test repository to test BehatSpec functionality.
 
-- `master` branch is using `dev-master` version of BehatSpec.
+- `behatspec` branch is using `dev-master` version of BehatSpec.
+- `behat-phpspec` branch is using `leanphp/behat-phpspec` (temporary fork of
+  BehatSpec).
 - `v0.5` branch is using `^0.5` version of BehatSpec.
 
 It contains a basic configuration of Behat3 and PhpSpec3 with BehatSpec enabled
